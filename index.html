@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Барбершоп «Борода» — стрижки и бритьё</title>
+<meta name="description" content="Мужские стрижки, оформление бороды, бритьё опасной бритвой. Запись по телефону и в Telegram.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #16233b;
+    --red: #b3261e;
+    --paper: #f7f5f2;
+    --steel: #8a94a3;
+    --ink: #1b1f27;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: Inter, Arial, sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; }
+  h1, h2, h3 { font-family: Oswald, Impact, sans-serif; line-height: 1.1; }
+  a { color: inherit; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+  /* Полоска как у барбер-пола */
+  .pole { height: 14px; background: repeating-linear-gradient(-45deg, var(--red) 0 14px, #fff 14px 28px, var(--navy) 28px 42px, #fff 42px 56px); }
+
+  header { background: var(--navy); color: #fff; padding: 14px 0; }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .logo { font-family: Oswald, sans-serif; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
+  nav a { margin-left: 18px; text-decoration: none; font-size: .95rem; color: #d5dae3; }
+  nav a:hover, nav a:focus-visible { color: #fff; text-decoration: underline; }
+
+  .hero { background: var(--navy); color: #fff; padding: 72px 0 80px; }
+  .hero h1 { font-size: clamp(2.6rem, 9vw, 5.2rem); font-weight: 700; max-width: 11ch; }
+  .hero p { margin: 20px 0 32px; max-width: 46ch; color: #d5dae3; font-size: 1.1rem; }
+  .btn { display: inline-block; background: var(--red); color: #fff; padding: 14px 28px; text-decoration: none; font-weight: 500; border-radius: 4px; border: 2px solid var(--red); }
+  .btn:hover, .btn:focus-visible { background: #8f1d17; border-color: #8f1d17; }
+  .btn.ghost { background: transparent; border-color: #fff; margin-left: 10px; }
+  .btn.ghost:hover, .btn.ghost:focus-visible { background: #fff; color: var(--navy); }
+
+  section { padding: 64px 0; }
+  h2 { font-size: 2.2rem; color: var(--navy); margin-bottom: 28px; }
+
+  .prices { list-style: none; max-width: 640px; }
+  .prices li { display: flex; align-items: baseline; gap: 10px; padding: 14px 0; border-bottom: 1px solid #d9d5cd; }
+  .prices .name { font-weight: 500; }
+  .prices .note { color: var(--steel); font-size: .9rem; }
+  .prices .dots { flex: 1; border-bottom: 2px dotted #c3bdb2; transform: translateY(-4px); }
+  .prices .cost { font-family: Oswald, sans-serif; font-size: 1.3rem; color: var(--red); white-space: nowrap; }
+
+  .about { background: #ece8e1; }
+  .about p { max-width: 60ch; margin-bottom: 14px; }
+
+  .contacts .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
+  .contacts h3 { font-size: 1.2rem; margin-bottom: 8px; color: var(--navy); }
+  .contacts .phone { font-family: Oswald, sans-serif; font-size: 1.8rem; text-decoration: none; color: var(--red); }
+
+  footer { background: var(--navy); color: var(--steel); text-align: center; padding: 24px 0; font-size: .9rem; }
+
+  @media (max-width: 560px) {
+    nav { display: none; }
+    .btn.ghost { margin: 12px 0 0; }
+  }
+  a:focus-visible { outline: 3px solid #f0b429; outline-offset: 3px; }
+</style>
+</head>
+<body>
+
+<div class="pole" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap">
+    <!-- ЗАМЕНИТЬ: название барбершопа -->
+    <a class="logo" href="#top">Борода</a>
+    <nav>
+      <a href="#prices">Цены</a>
+      <a href="#about">О нас</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <!-- ЗАМЕНИТЬ: заголовок и описание -->
+      <h1>Стрижка, которая держит форму</h1>
+      <p>Мужские стрижки, борода и бритьё опасной бритвой. Без очередей: записывайтесь на удобное время.</p>
+      <!-- ЗАМЕНИТЬ: номер телефона (только цифры после tel:) и ссылку на Telegram -->
+      <a class="btn" href="tel:+79990000000">Записаться по телефону</a>
+      <a class="btn ghost" href="https://t.me/your_username">Написать в Telegram</a>
+    </div>
+  </div>
+
+  <section id="prices">
+    <div class="wrap">
+      <h2>Цены</h2>
+      <!-- ЗАМЕНИТЬ: услуги и цены на реальные -->
+      <ul class="prices">
+        <li><span class="name">Мужская стрижка</span><span class="dots"></span><span class="cost">1 500 ₽</span></li>
+        <li><span class="name">Стрижка машинкой</span><span class="dots"></span><span class="cost">1 000 ₽</span></li>
+        <li><span class="name">Оформление бороды</span><span class="dots"></span><span class="cost">900 ₽</span></li>
+        <li><span class="name">Королевское бритьё</span><span class="dots"></span><span class="cost">1 300 ₽</span></li>
+        <li><span class="name">Стрижка + борода</span><span class="dots"></span><span class="cost">2 200 ₽</span></li>
+        <li><span class="name">Детская стрижка <span class="note">до 12 лет</span></span><span class="dots"></span><span class="cost">1 000 ₽</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <h2>О нас</h2>
+      <!-- ЗАМЕНИТЬ: рассказ про барбершоп -->
+      <p>Мы работаем с 2020 года. Каждого клиента стрижём не меньше 45 минут и всегда уточняем, какой результат вам нужен.</p>
+      <p>Используем профессиональную косметику и стерилизуем инструменты перед каждым клиентом.</p>
+    </div>
+  </section>
+
+  <section id="contacts" class="contacts">
+    <div class="wrap">
+      <h2>Контакты</h2>
+      <div class="grid">
+        <div>
+          <h3>Адрес</h3>
+          <!-- ЗАМЕНИТЬ: адрес -->
+          <p>г. Москва, ул. Примерная, 12<br>вход со двора, 2 этаж</p>
+        </div>
+        <div>
+          <h3>Часы работы</h3>
+          <!-- ЗАМЕНИТЬ: график -->
+          <p>Пн–Пт: 10:00–21:00<br>Сб–Вс: 10:00–19:00</p>
+        </div>
+        <div>
+          <h3>Запись</h3>
+          <!-- ЗАМЕНИТЬ: телефон в двух местах (в ссылке и в тексте) -->
+          <a class="phone" href="tel:+79990000000">+7 999 000-00-00</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Барбершоп «Борода»</div>
+</footer>
+
+</body>
+</html>
